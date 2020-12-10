@@ -9,8 +9,8 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
-  overflow-x: hidden;
+  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 
 .background {
@@ -156,7 +156,7 @@ nav ul li {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 20px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 #description {

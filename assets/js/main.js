@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let background = document.querySelector(".background");
   let indices = document.querySelectorAll(".index");
   
-  let bgImgs = ["backgrnda10.jpg", "backgrnda1.jpg", "backgrnda7.jpg", "backgrnda9.jpg", "backgrnda8.jpg"];
+  let bgImgs = ["backgrnda3.jpg", "backgrnda6.jpg","backgrnda8.jpg", "backgrnda1.jpg", "backgrnda7.jpg"];
   
   let currentIndex = 0;
   indices.forEach(index => index.classList.remove("active"));
@@ -88,15 +88,19 @@ document.addEventListener("DOMContentLoaded", () => {
     indices.forEach(index => index.classList.remove("active"));
     indices[currentIndex].classList.add("active");
     distortAnimations[prevIndex].next();
-    showTextAnimation("next");
-
     setTimeout(() => {
       let canvas = background.querySelectorAll("canvas");
       background.appendChild(canvas[0]);
       distortAnimations[prevIndex].previous();
     }, 1200);
+  
 
   }
+
+  nextBtn.addEventListener("click", () => {
+    startNextDistortAnimation();
+  });
+
 
   }
 )
