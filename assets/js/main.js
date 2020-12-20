@@ -3,9 +3,25 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "carousel",
       startAt: 0,
       animationTimingFunc: "ease-in-out",
+      autoplay: 4000,
       gap: 100,
       perView: 3
     }).mount();
+
+
+    // var glide = new Glide('#options-hoverpause', {
+    //   hoverpause: checkbox.checked,
+    //   autoplay: 2000,
+    //   perView: 3
+    // })
+    
+    // checkbox.addEventListener('change', function () {
+    //   glide.update({
+    //     hoverpause: checkbox.checked
+    //   })
+    // })
+    
+    // glide.mount()
   
   let prevBtn = document.getElementById("prev");
   let nextBtn = document.getElementById("next");
