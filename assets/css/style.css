@@ -8,15 +8,20 @@
 
 body {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  /* overflow-x: hidden; */
+  height: 200%;
+ overflow-x: hidden;
+  
+}
+
+#mainsection{
+height: 100vh;
+
 }
 
 .background {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   background-color: #036ecc;
   z-index: -1;
@@ -26,7 +31,15 @@ body {
   height: 100%;
   width: 100%;
 }
+.abt-us{
+  height: 100vh;
+  background-color: #ffffff;
+}
 
+.choose-us{
+  height: 100vh;
+  background-color: #036ecc;
+}
 nav {
   display: flex;
   padding: 25px 80px;
