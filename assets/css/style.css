@@ -135,6 +135,8 @@ nav ul li {
 
 .textwrapper {
   width: 60%;
+  position: relative;
+  height: 40%;
 }
 .text {
   padding-left: 300px;
@@ -142,26 +144,32 @@ nav ul li {
 }
 
 .text h4 {
-  font-size: 60px;
+  font-size: 87px;
   font-weight: 700;
   color: white;
   position: relative;
+  margin: 0;
+  line-height: 70px;
+  
 }
-
 #title {
   overflow: hidden;
   height: 70px;
+  /* padding: -5px, 0; */
   display: flex;
   width: auto;
+  /* line-height: 70px; */
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* background-color: yellowgreen; */
+  position: relative;
+  
 }
 
 #description {
   overflow: hidden;
-  height: 75px;
+  height: 55px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
