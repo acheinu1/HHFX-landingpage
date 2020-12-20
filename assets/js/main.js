@@ -97,8 +97,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  function startPrevDistortAnimation() {
+    currentIndex = currentIndex - 1 < 0 ? 4 : currentIndex - 1;
+    indices.forEach(index => index.classList.remove("active"));
+    indices[currentIndex].classList.add("active");
+    distortAnimations[currentIndex].next();
+    setTimeout(() => {
+      let canvas = background.querySelectorAll("canvas");
+      background.insertBefore(canvas[canvas.length - 1], background.firstChild);
+      distortAnimations[currentIndex].previous();
+    }, 500);
+  }
+
   nextBtn.addEventListener("click", () => {
     startNextDistortAnimation();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    startPrevDistortAnimation();
   });
 
 
