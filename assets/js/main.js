@@ -214,3 +214,4 @@ let timer=setInterval(autoPlay,4000);
 // ===================auto play ==================
   }
 )
+
