@@ -90,7 +90,7 @@ nav ul li {
   justify-content: space-evenly;
 }
 
-.line {
+.line1 {
   position: absolute;
   width: 1px;
   height: 100%;
@@ -543,12 +543,14 @@ input[type="radio"] {
 
 }
 ul.nav{
-  padding-top: 15px;
+  padding: 10%, 0, 0, 0%;
   z-index: 100;
-  width: 100%;
-  margin-top: -40px;
+  width: 90%;
+  margin: auto 40px;
   display: flex;
-  justify-content: space-evenly;
+  position: relative;
+  left: 10%;
+  transform: translate(10%, 2%);
 }
 
 ul.nav li{
@@ -556,18 +558,201 @@ ul.nav li{
   text-align: center;
   text-transform: uppercase;
   color: #036ecc;
-  font-size: 14px;
+  font-size: 11px;
   cursor: pointer;
   font-weight: 700;
   transition: all .3s ease;
   vertical-align: middle;
   height: 60px;
   position: relative;
+  width: 22.5%;
 }
 
 ul.nav li::before{
   content: " ";
   width: 25px;
   height:  25px;
-  border: 2px solid rgb(219, 198, 198);
+  border: 2px solid #036ecc79;
+  border-radius: 50%;
+  margin:auto ;
+  display: block;
+  transition: all .3s ease;
 }
+
+ul.nav li:hover::before{
+  border: 2px solid white;
+  background: #014785;
+}
+
+ul.nav li .inner{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  font-weight: bolder;
+} 
+ul.nav li.active,
+ul.nav li:hover{
+  color: #014785;
+}
+ul.nav li::after{
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #036ecc;
+  border-radius: 50%;
+  margin: auto;
+  border: 7px solid white;
+  margin-top: 40px;
+  box-shadow: 0px 0px 5px 0px  rgba(0, 0, 0, .2);
+}
+ul.nav li:hover::after,
+ul.nav li.active::after
+{
+background:#014785;
+}
+.line{
+  max-width: 62%;
+  margin: auto;
+  position: relative;
+  left: 13.5%;
+  background-color: black;
+  opacity: 0.6;
+  height: 7px;
+  top: 17%;
+  z-index: 1;
+  border-radius: 50px;
+}
+.line span{
+  content: '';
+  width: 2%;
+  height: 100%;
+  background-image: linear-gradient(to right, #014785 0%, #036ecc 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all .8s ease;
+}
+
+.content1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  animation: anim .7s linear forwards;
+  /* flex-direction: column; */
+  left: 12%;
+}
+
+.content1 section{
+  width: 70%;
+  margin: auto;
+  background-image: linear-gradient(to right, #014785 0%, #036ecc 100%);
+  border-radius: 9px;
+  padding: 30px;
+  color: white;
+}
+
+.content1 section span{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.content1 section h1{
+  font-weight: 800;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.content1 section p{
+  padding: 30px 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+.account:checked ~ .head .nav li .st1::before,
+
+.login:checked ~ .head .nav li .st1::before,
+.login:checked ~ .head .nav li .st2::before,
+
+.invest:checked ~ .head .nav li .st1::before,
+.invest:checked ~ .head .nav li .st2::before,
+.invest:checked ~ .head .nav li .st3::before,
+
+.refer:checked ~ .head .nav li .st1::before,
+.refer:checked ~ .head .nav li .st2::before,
+.refer:checked ~ .head .nav li .st3::before,
+.refer:checked ~ .head .nav li .st4::before
+{
+ border: 2px solid rgb(87, 10, 10);
+ background: rgb(54, 77, 8);
+}
+.login:checked ~ .head .line span{
+  width: 35%;
+}
+
+.invest:checked ~ .head .line span{
+  width: 65%;
+}
+
+.refer:checked~ .head .line span{
+  width: 100%;
+}
+
+.Create-Account,
+.Login-Section,
+.Invest-Section,
+.Refer-Section
+{
+  transform: scale(1);
+  transform-origin: center bottom;
+  transition: all .7s ease;
+  position: absolute;
+  top: 20px;
+  margin-left: 20%;
+}
+
+.account:checked~.Create-Account,
+.login:checked~.Login-Section,
+.invest:checked~.Invest-Section,
+.refer:checked~.Refer-Section{
+  display: inline-block;
+  transform: scale(1);
+  transform-origin: bottom;
+  z-index: 1200;
+}
+
+@keyframes anim{
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes trans{
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* =======================end of steps====================== */
