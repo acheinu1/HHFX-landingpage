@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/glide.core.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-
-     
     <script src="assets/js/main.js"></script>
     <script src="assets/js/hover.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -217,55 +214,87 @@
 
                <!-- ====================steps=============================================== -->
         <div class="steps">
-            <input type="radio" class="account" id="">
-            <input type="radio" class="login" id="">
-            <input type="radio" class="invest" checked id="">
-            <input type="radio" class="refer" id="">
-            <div class="head">
-                <ul class="nav">
-                    <li class="st st1 active"><h2 class="inner">Create Account</h2></li>
-                    <li class="st st2"><h2 class="inner">Login</h2></li>
-                    <li class="st st3"><h2 class="inner">Invest</h2></li>
-                    <li class="st st4"><h2 class="inner">Refer</h2></li>
-                </ul>
-                <div class="line"><span></span></div>
-            </div>
-            <div class="content1">
-                <section class="Create-Account">
-                    <span><i class="fas fa-user-circle"></i></span>
-                    <h1>Create Account</h1>
-                    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                         accusantium nobis! Nihil commodi aut itaque
-                         magni delectus voluptates sunt earum?
-                    </p>
-                </section>
-                <section class="Login-Section">
-                    <span><i class="fas fa-sign-in-alt"></i></span>
-                    <h1>Login</h1>
-                    <p> 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                         accusantium nobis! Nihil commodi aut itaque
-                         magni delectus voluptates sunt earum?
-                    </p>
-                </section>
-                <section class="Invest-Section">
-                    <span><i class="fas fa-money-bill-wave"></i></span>
-                    <h1>Invest</h1>
-                    <p> 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                         accusantium nobis! Nihil commodi aut itaque
-                         magni delectus voluptates sunt earum?
-                    </p>
-                </section>
-                <section class="Refer-Section">
-                    <span><i class="fas fa-share-alt-square"></i></span>
-                    <h1>Refer</h1>
-                    <p> 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                         accusantium nobis! Nihil commodi aut itaque
-                         magni delectus voluptates sunt earum?
-                    </p>
-                </section>
-            </div>
-    </div>
-    <!-- =========================================steps===================================== -->
+            <div class="process-wrapper">
+                <!-- <h1>Our Process</h1> -->
+                <br> 
+                <div id="progress-bar-container">
+                    <ul>
+                        <li class="step step01 active1"><div class="step-inner">SIGN UP</div></li>
+                        <li class="step step02"><div class="step-inner">LOGIN</div></li>
+                        <li class="step step03"><div class="step-inner">UPDATE PROFILE</div></li>
+                        <li class="step step04"><div class="step-inner">INVEST</div></li>
+                        <li class="step step05"><div class="step-inner">REFER</div></li>
+                    </ul>
+                    
+                    <div id="line">
+                        <div id="line-progress"></div>
+                    </div>
+                </div>
+                
+                <div id="progress-content-section">
+                    <div class="section-content discovery active1">
+                        <h2>SIGN UP</h2>
+                        <p> sign upLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo,
+                             consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat
+                             non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse
+                               vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
+                                mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo 
+                                et condimentum. Maecenas volutpat turpis at felis egestas malesuada.
+                                 Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content strategy">
+                        <h2>LOGIN</h2>
+                        <p>login Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, 
+                          consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non 
+                          ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae 
+                          velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id 
+                          fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. 
+                          Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, 
+                          venenatis at ex a, lacinia suscipit orci.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content creative">
+                        <h2>UPDATE PROFILE</h2>
+                        <p>update profile Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo,
+                           consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat 
+                           non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse
+                           vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, 
+                           id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. 
+                           Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, 
+                           venenatis at ex a, lacinia suscipit orci.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content production">
+                        <h2>INVEST</h2>
+                        <p>Invest Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo,
+                            consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non
+                            ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae
+                            velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                             fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. 
+                             Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio,
+                              venenatis at ex a, lacinia suscipit orci.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content analysis">
+                        <h2>REFER</h2>
+                        <p>Refer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo,
+                             consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non
+                              ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae 
+                              velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, 
+                              id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. 
+                              Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis 
+                              at ex a, lacinia suscipit orci.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+           <!-- =========================================steps===================================== -->
 
 
 
@@ -376,8 +405,55 @@
 
         </div>
     </section>
-    <section>
-        
+    <section class="choose-us">
+        <!-- ============================================choose us========================== -->
+        <h1>Why Our Investors Choose Us</h1>
+        <div class="grid-container">
+          <div><i class="fas fa-lock"></i><h3>SECURE INVESTMENT</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nulla.</p></div>
+          <div><i class="fas fa-coins"></i><h3>20% MONTHLY R.O.I</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nulla.</p></div>
+          <div><i class="fas fa-user-lock"></i><h3>PERSONAL DASHBOARD</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nulla.</p></div>
+          <div><i class="fas fa-credit-card"></i><h3>PAYMENT OPTIONS</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nulla.</p></div>
+        </div>
+        <!-- ++++++++++++++++++++++++++++++++++why choose =+++++++++++++++++++++++++++++++++++ -->
     </section>
+    <section class="testimonials">
+          
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- +++++++++++++++++++++++++++++++++JQuery+++++++++++++++++++++++++++++++++++++++ -->
+    <script>
+    $(".step").click( function() {
+	$(this).addClass("active1").prevAll().addClass("active1");
+	$(this).nextAll().removeClass("active1");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active1").siblings().removeClass("active1");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active1").siblings().removeClass("active1");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active1").siblings().removeClass("active1");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active1").siblings().removeClass("active1");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active1").siblings().removeClass("active1");
+});
+</script>
+
+<!-- ++++++++++++++++++++++++++++++++JQuery++++++++++++++++++++++++++++++++++++++ -->
 </body>
 </html>
