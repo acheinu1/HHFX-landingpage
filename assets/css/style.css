@@ -407,8 +407,8 @@ nav ul li {
 
 
 .abt-us{
-  height: 191vh;
-  background-color: #F1F5F9;
+  height: 139vh;
+  background-color:  #F1F5F9;
 }
 
 .abtText{
@@ -693,7 +693,7 @@ svg path:nth-child(4) {
 /* =======================end of steps====================== */
 /* ======================choose us section =============================== */
 .choose-us{
-  height: 100vh;
+  height: 90vh;
   background-color: #F1F5F9;
   /* background-color: #036ecc; */
   display: flex;
@@ -703,7 +703,7 @@ svg path:nth-child(4) {
 }
 
 .choose-us h1{
-  margin-top: 5%;
+  margin-top: 7%;
   margin-bottom: 2%;
   font-size: 50px;
   color: #036ecc;
@@ -740,6 +740,92 @@ svg path:nth-child(4) {
   text-align: center;
   padding-bottom: 2%;
 }
+
 /* ========================================testimonial========================== */
 
+.blockquote p {
+  font-size: 1.6em;
+  line-height: 1.6;
+  padding: 1em;
+  color: #014785;
+}
 
+#slider-container h1{
+  font-size: 60px;
+  color: #036ecc;
+  text-align: center;
+  /* position: relative;
+  left: 10%; */
+  margin: auto;
+  padding-top: 3%;
+}
+#slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  height: 80vh;
+}
+
+#testimonials {
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1000px;
+  height: 650px;
+}
+
+figure {
+  position: absolute;
+  width: 400%;
+  left: 0;
+  padding: 2% 0;
+  animation: 20s slider infinite;
+  -webkit-animation: 20s slider infinite;
+  border-top: 1px solid #014785;
+  border-bottom: 1px solid #014785;
+  margin: 0;
+  height: 80%;
+}
+
+blockquote {
+  width: 25%;
+  margin: 0;
+  float: left;
+  padding-bottom: 1em;
+}
+blockquote footer img{
+  margin-top: -10%;
+}
+
+@-webkit-keyframes slider {
+	0%  { transform: translateX(0%); }
+	25% { transform: translateX(0%); }
+	33% { transform: translateX(-25%); }
+	58% { transform: translateX(-25%); }
+	66% { transform: translateX(-50%); }
+	91% { transform: translateX(-50%); }
+	100%{ transform: translateX(-75%); }
+}
+
+@keyframes slider {
+	 0%  { transform: translateX(0%); }
+	25% { transform: translateX(0%); }
+	33% { transform: translateX(-25%); }	
+	58% { transform: translateX(-25%); }
+	66% { transform: translateX(-50%); }
+	91% { transform: translateX(-50%); }
+	100%{ transform: translateX(-75%); }
+}
+
+footer {
+  padding: 1em;
+  float: right;
+  margin-right: 2em;
+}
+
+@media(min-width:750px) {
+  #testimonials{
+    height: 150px;
+  }
+}
