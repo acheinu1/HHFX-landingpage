@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/glide.core.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,29 +11,29 @@
     <script src="assets/js/hover.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script src="assets/js/glide.min.js"></script>
-   
+    <script src="assets/js/glide.min.js"></script>  
 </head>
 <body>
-    <!-- #---------the nav bar =======================================================-->
     <section id="mainsection">
-        <nav>
-            <h5><img src="assets/images/hhfx  official logo.png" alt=""></h5>
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Our team</li>
-                <li>Our training</li>
-                <li>FAQS</li>
-                <li>Gallery</li>
-                
-            </ul>
-            <div class="search">
-                <i class="fa fa-search"></i>
-            </div>
-        </nav>
-     <!-- #---------the nav bar ========================================================-->
-
+    <!-- #---------the nav bar =======================================================-->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">HH<strong>FX</strong></div>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!-- #---------the nav bar ========================================================-->
+            
      <!-- #---------the sideline-================================================------ -->
      <div class="side_indicator">
         <div class="line1"></div>
@@ -63,7 +62,7 @@
              <div class="text">
                  <div id="title">
                      <h4>RELIABLE</h4>
-                     <h4 style="font-size:70px;">INTEGRITY</h4>
+                     <h4 class="integrity">INTEGRITY</h4>
                      <h4>SECURED </h4>
                      <h4>TRUST</h4>
                      <h4>QUALITY</h4>
@@ -101,7 +100,7 @@
                     <!-- card slide one ================-->
                   <li class="glide__slide">
                       <div class="slide one">
-                         <p>Slide one</p>
+                         <p>Reliable team</p>
                          <div class="rating">
                              <div class="circle active"></div>
                              <div class="circle active"></div>
@@ -120,7 +119,7 @@
                   <!-- card slide two ===================-->
                   <li class="glide__slide">
                     <div class="slide two">
-                        <p>Slide two</p>
+                        <p>Expert Team</p>
                         <div class="rating">
                             <div class="circle active"></div>
                             <div class="circle active"></div>
@@ -136,7 +135,7 @@
                    <!-- card slide three =================-->
                   <li class="glide__slide">
                     <div class="slide three">
-                        <p>Slide three</p>
+                        <p>Secured Investment</p>
                         <div class="rating">
                             <div class="circle active"></div>
                             <div class="circle active"></div>
@@ -146,16 +145,13 @@
                         </div>
                         <div class="slider-image">
                             <img src="assets/images/slideimagessecured.jpg" alt="">
-                            <div class="bookmark">
-                                <i class="fa fa-bookmark"></i>
-                            </div>
                         </div>
                      </div>
                   </li>
                   <!-- card slide four =================-->
                   <li class="glide__slide">
                     <div class="slide four">
-                        <p>SLide four</p>
+                        <p>Guaranteed returns</p>
                         <div class="rating">
                             <div class="circle active"></div>
                             <div class="circle active"></div>
@@ -165,16 +161,13 @@
                         </div>
                         <div class="slider-image">
                             <img src="assets/images/slideimagessignal1.jpg" alt="">
-                            <div class="bookmark">
-                                <i class="fa fa-bookmark"></i>
-                            </div>
                         </div>
                      </div>
                   </li>
                   <!-- card slide five =================-->
                   <li class="glide__slide">
                     <div class="slide five">
-                        <p>Slide Five</p>
+                        <p>Quality Service</p>
                         <div class="rating">
                             <div class="circle active"></div>
                             <div class="circle active"></div>
@@ -184,9 +177,6 @@
                         </div>
                         <div class="slider-image">
                             <img src="assets/images/slideimagesservice2.jpg" alt="">
-                            <div class="bookmark">
-                                <i class="fa fa-bookmark"></i>
-                            </div>
                         </div>
                      </div>
                   </li>
@@ -195,10 +185,10 @@
 
               <div data-glide-el="controls" class="controls">
                 <div data-glide-dir="<" id="prev">
-                  <i class="fa fa-arrow-left"></i>
+                  <!-- <i class="fa fa-arrow-left"></i> -->
                 </div>
                 <div data-glide-dir=">" id="next">
-                  <i class="fa fa-arrow-right"></i>
+                  <!-- <i class="fa fa-arrow-right"></i> -->
                 </div>
               </div>
         </div>
@@ -393,7 +383,7 @@
     
         <!-- ++++++++++++++++++++++++++++++++++the testimonial ==================================== -->
         <section id="slider-container">
-            <h1>What Our Clients Say About</h1>
+            <h1>What Our Clients Say About Us</h1>
             <div id="testimonials">
               <figure class="single-testimonial">
                 <blockquote>
@@ -417,6 +407,109 @@
             </div>
           </section>
         <!-- =============================testimonial------------------ -->
+        <!-- ==============================footer========================= -->
+        <section class="footer-section">
+            <div class="container">
+                <div class="footer-cta ">
+                    <div class="row">
+                        <div>
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>9876543210 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content ">
+                    <div class="row">
+                        <div>
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/images/hhfx  official logo.png" style="width: 150px;" class="img-fluid" alt="logo"> <h3 style="color: white; text-decoration: none;">Higher Heights Forex Capital</h3></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Our Training</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Invest Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2021, All Right Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================footer Starts=================================================== -->
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
