@@ -1193,6 +1193,9 @@ header h1{
   .blogContent{
     bottom: 0;
   }
+  .theBlog{
+    height: auto;
+  }
 }
 @media (max-width:500px) {
 
