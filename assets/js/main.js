@@ -81,29 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
 
-  // startNextDistortAnimation.matchMedia({
-
-  //   "(min-width:760px)": function(){
-      
-  //   }
-  // });
-
-
-  // if (window.matchMedia("(max-width: 700px)").matches) {
-  //   background.innerHTML = "The screen is less than, or equal to, 700 pixels wide.";
-  // } else {
-  //   background.innerHTML = "The screen is at least 700 pixels wide.";
-  // }
-
-//==============media queries=========================
-  var mq = window.matchMedia('@media all and (max-width: 700px)');
-  if(mq.matches) {
-    startNextDistortAnimation()
-  } else {
-  // !startNextDistortAnimation()
-  }
-
-
   function startNextDistortAnimation() {
     let prevIndex = currentIndex;
     currentIndex = (currentIndex + 1) % 5;
@@ -116,8 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
       background.appendChild(canvas[0]);
       distortAnimations[prevIndex].previous();
     }, 1200);
-  
-
   }
 
   // function startPrevDistortAnimation() {
@@ -145,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ================== the captions and text=======
+
 let titleDisplacement = 0;
 let descriptionDisplacement = 0;
 
