@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/glide.core.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/hover.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script src="assets/js/glide.min.js"></script>  
+    <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
     <section id="mainsection">
@@ -549,5 +544,20 @@ $(".step05").click( function() {
 </script>
 
 <!-- ++++++++++++++++++++++++++++++++JQuery++++++++++++++++++++++++++++++++++++++ -->
+<script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/hover.js"></script> -->
+    <script>
+        if (screen && screen.width > 768) {
+        document.write('<script type="text/javascript" src="assets/js/hover.js"><\/script>');
+        }
+        </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> -->
+    <script>
+        if (screen && screen.width > 768) {
+        document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"><\/script>');
+        }
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="assets/js/glide.min.js"></script> 
 </body>
 </html>

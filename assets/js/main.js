@@ -8,24 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       perView: 3
     }).mount();
 
-
-    // var glide = new Glide('#options-hoverpause', {
-    //   hoverpause: checkbox.checked,
-    //   autoplay: 2000,
-    //   perView: 3
-    // })
-    
-    // checkbox.addEventListener('change', function () {
-    //   glide.update({
-    //     hoverpause: checkbox.checked
-    //   })
-    // })
-    
-    // glide.mount()
-  
-  let prevBtn = document.getElementById("prev");
-  let nextBtn = document.getElementById("next");
-  
   let background = document.querySelector(".background");
   let indices = document.querySelectorAll(".index");
   
@@ -98,6 +80,30 @@ document.addEventListener("DOMContentLoaded", () => {
     myAnimation5
   ];
 
+
+  // startNextDistortAnimation.matchMedia({
+
+  //   "(min-width:760px)": function(){
+      
+  //   }
+  // });
+
+
+  // if (window.matchMedia("(max-width: 700px)").matches) {
+  //   background.innerHTML = "The screen is less than, or equal to, 700 pixels wide.";
+  // } else {
+  //   background.innerHTML = "The screen is at least 700 pixels wide.";
+  // }
+
+//==============media queries=========================
+  var mq = window.matchMedia('@media all and (max-width: 700px)');
+  if(mq.matches) {
+    startNextDistortAnimation()
+  } else {
+  // !startNextDistortAnimation()
+  }
+
+
   function startNextDistortAnimation() {
     let prevIndex = currentIndex;
     currentIndex = (currentIndex + 1) % 5;
@@ -114,28 +120,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-  function startPrevDistortAnimation() {
-    currentIndex = currentIndex - 1 < 0 ? 4 : currentIndex - 1;
-    indices.forEach(index => index.classList.remove("active"));
-    indices[currentIndex].classList.add("active");
-    distortAnimations[currentIndex].next();
-    showTextAnimation("prev");
-    setTimeout(() => {
-      let canvas = background.querySelectorAll("canvas");
-      background.insertBefore(canvas[canvas.length - 1], background.firstChild);
-      distortAnimations[currentIndex].previous();
-    }, 500);
-  }
+  // function startPrevDistortAnimation() {
+  //   currentIndex = currentIndex - 1 < 0 ? 4 : currentIndex - 1;
+  //   indices.forEach(index => index.classList.remove("active"));
+  //   indices[currentIndex].classList.add("active");
+  //   distortAnimations[currentIndex].next();
+  //   showTextAnimation("prev");
+  //   setTimeout(() => {
+  //     let canvas = background.querySelectorAll("canvas");
+  //     background.insertBefore(canvas[canvas.length - 1], background.firstChild);
+  //     distortAnimations[currentIndex].previous();
+  //   }, 500);
+  // }
 
-  nextBtn.addEventListener("click", () => {
-    startNextDistortAnimation();
-    resetTimer();
-  });
+  // nextBtn.addEventListener("click", () => {
+  //   startNextDistortAnimation();
+  //   resetTimer();
+  // });
 
-  prevBtn.addEventListener("click", () => {
-    startPrevDistortAnimation();
-    resetTimer();
-  });
+  // prevBtn.addEventListener("click", () => {
+  //   startPrevDistortAnimation();
+  //   resetTimer();
+  // });
 
 
 // ================== the captions and text=======
