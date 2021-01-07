@@ -11,20 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/css/faq.css">
     <title>FAQs</title>
 </head>
 <body>
+
+    <!-- =================the navbar=================== -->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">HH<strong>FX</strong></div>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#training">Our training</a></li>
+            <li><a href="#projects">Our Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!-- ==================navbar============== -->
     <section class="faq-section">
         <div class="container">
+          <!-- ========faqs================ -->
           <div class="row">
                             <!-- ***** FAQ Start ***** -->
-                            <div class="col-md-6 offset-md-3">
-        
-                                <div class="faq-title text-center pb-3">
-                                    <h2>FAQ</h2>
-                                </div>
+    
+                            <div class="faq-title text-start pb-3">
+                                <h2>FAQ</h2>
                             </div>
                             <div class="col-md-6 offset-md-3">
                                 <div class="faq" id="accordion">
@@ -128,9 +150,56 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 offset-md-3 mt-6 contactform text-typing">
+                                <h1>Still got more questions?</h1>
+                                <button > <a href="./contact.html" style="text-decoration: none">Contact us now</a> </button>
+                            </div>
                           </div>
                         </div>
                         </section>
+
+                        <!-- ====================footer================= -->
+                        <section class="footer">
+                            <div class="container2">
+                                <div class="row1">
+                                    <div class="footer-col">
+                                        <h4>HHFX Capital</h4>
+                                        <ul>
+                                            <li><a href="./index.html">home</a></li>
+                                            <li><a href="#">about us</a></li>
+                                            <li><a href="#">our training</a></li>
+                                            <li><a href="#">our team</a></li>
+                                            <li><a href="#">gallery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>get help</h4>
+                                        <ul>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">payment options</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>quick links</h4>
+                                        <ul>
+                                            <li><a href="#">invest now</a></li>
+                                            <li><a href="#">view investment</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>follow us</h4>
+                                        <div class="social-links">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </section>
+                       <!-- ========================footer ends ===================== -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
