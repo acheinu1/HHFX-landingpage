@@ -541,8 +541,8 @@ nav .icon-burger .line {
 
 /* ================================the about section========================= */
 .abt-us{
-  height: 139vh;
-  background-color: rgb(167, 251, 233);
+  height: auto;
+  background-color: rgb(206, 248, 253);
   position:static;
 }
 
@@ -873,9 +873,10 @@ svg path:nth-child(4) {
 /* =======================end of steps====================== */
 /* ======================choose us section =============================== */
 .choose-us{
-  height: 80vh;
-  /* position: static; */
-  background-color: #F1F5F9;
+  max-height: auto;
+  padding-bottom: 5%;
+  /* background-color: #5f92c5; */
+  background-color: rgb(206, 248, 253);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -888,92 +889,80 @@ svg path:nth-child(4) {
   font-size: 50px;
   color: #036ecc;
 }
-/* ==================================the grid========================= */
-.scroller{
-  background-color: none;
-  padding: 2% 10%;
+/* ==================================the grid animated boxes ========================= */
+
+.boxWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrapper{
- width: auto;
- background-color: #036ecc;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-gap: 10px;
- grid-template-rows: 300px;
- grid-auto-rows: 300px ;
- border-bottom:#036ecc 10px solid;
- box-shadow: 1px -1px 14px -2px rgba(0,0,0,0.47);
--webkit-box-shadow: 1px -1px 14px -2px rgba(0,0,0,0.47);
--moz-box-shadow: 1px -1px 14px -2px rgba(0,0,0,0.47);
+.containerbox{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.containerbox .card{
+  position: relative;
+  max-width: 300px;
+  height: 230px;
+  background-color:  #036ecc;
+  /* background-image: linear-gradient(to right, #014785 0%, #036ecc 100%); */
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0 5px 102px rgba(0, 0, 0, 0.192); */
+  transition: 0.3s ease-in-out;
+}
+.containerbox .card:hover{
+  height: 410px;
+}
+.containerbox .card .imgbx img{
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+.containerbox .card .imgbx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -70px;
+  left: 4px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.item{
- background: #fff;
- padding: 10px;
- text-align: center;
+.containerbox .card .contentBox{
+  position: relative;
+  margin-top: -120px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-.item:nth-child(even){
- background-color: #fff;
+.containerbox .card .contentBox h2{
+  margin-top: -4px;
+  font-size: 22px;
+}
+.containerbox .card .contentBox p{
+  font-size: 13px;
+}
+.containerbox .card:hover .contentBox{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
 
-/* ===============f awsome in css grid========== */
-.wrapper .item i{
- font-size: 50px;
- margin:10% auto;
- color: #014785 ;
- text-align: center;
-}
-.wrapper .item i:hover{
-  font-size: 60px;
-  color: #1d1f23af ;
-  cursor:pointer;
- }
- 
-.wrapper .item h3{
- font-size: 16px;
- color: #1d1f23af;
- margin:5% auto;
-}
-.wrapper .item p{
-  font-size: 16px;
-  color: #036ecc;
- }
- 
-
-.wrapper .item h3:hover{
-  color: #014785;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 700;
- 
- }
 /* ================================end of css grid=============== */
 /* ==========FOR PHONE SCREEN================== */
 @media screen and (max-width: 575px) {
-  
-  /* .wrapper{
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      width: 100%;
-      margin: 0 auto;
-      grid-auto-rows: 20px ;
-      grid-template-rows: 20px;
-      height: auto;
-  }
-
-  .item{
-      flex: 0 0 auto;
-      width: 280px;
-  }
-  
-  .scroller{
-      width: 99%;
-      margin: 1% auto;
-      overflow-x: auto;
-      
-  }
-   */
    .wrapper{
     grid-template-columns: 2fr 2fr;
     grid-gap: 10px;
@@ -1008,10 +997,11 @@ svg path:nth-child(4) {
     text-align: center;
     padding: 7% 5%;
   }
-}
-.choose-us{
-  height: auto;
-  padding-bottom: 20%;
+  .choose-us{
+    height:200%;
+    background-color: red;
+    padding-bottom: 20%;
+  }
 }
 
 /* ========================================testimonial========================== */
