@@ -15,7 +15,7 @@
         <input id="nav-toggle" type="checkbox">
         <div class="logo">HH<strong>FX</strong></div>
         <ul class="links">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html" class="active">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#training">Our training</a></li>
             <li><a href="#projects">Our Team</a></li>
@@ -66,28 +66,24 @@
                      <h4>QUALITY</h4>
                  </div>
                  <div id="description">
-                    <p> We are reliable. We always keep our word, you can always count on us to keep our promises
+                    <p> We are reliable. We always keep our word. This is a norm that has built our profound
+                        culture at HHFX.
                         <br>
-                        <br>
-                    </p>
-                    <p> We have integrity. We are transparent in all our dealings 
-                        <br>
-                        <br>
-                    </p>
-                    <p> Our investment platform is safe and secured with high level encryption and security
-                    </p>
-                    <p> 
-                        <br>
-                        <br>
-                        You can trust us with your investment, as we are trustworthy and keep to all
-                        our promises
-                    </p>
-                    <p>
-                        <br>
-                         At Higher heights forex Limited, we believe is quality work and service, we do not compromise 
-                        on quality
-                    </p>
-                 </div>
+                   </p>
+                   <p> <br>
+                       We have integrity. We have sound moral and ethical values. We are transparent in all our 
+                       dealings and every process.
+                   </p>
+                   <p> Your investments are secured and safe with us. We offer full assurance for every investment
+                        and financial transaction with us.
+                   </p>
+                   <p> A business like ours requires great amount of trust and we are saying you can trust us.
+                        We are accountable.
+                   </p>
+                   <p> We provide superior quality in every endeavour undertaken or service rendered. And without
+                        doubt, our deliverables always meet expectations.
+                   </p>
+                </div>
                  <div class="btn">
                      <p><a href="http://hnxx-users.surge.sh/" style="text-decoration: none">Start now</a></p>
                      <i class="fa fa-arrow-right"></i>
@@ -382,7 +378,7 @@
             <!-- ================the first card ============= -->
             <div class="card">
                 <div class="imgbx">
-                    <img src="./assets/images/slideimagesteam.jpg" alt="">
+                    <img src="./assets/images/Secured Investment (1).png" alt="">
                 </div>
                 <div class="contentBox">
                     <h2>Secure investment </h2>
@@ -395,7 +391,7 @@
             <!-- =================the second card ============ -->
             <div class="card">
                 <div class="imgbx">
-                    <img src="./assets/images/slideimagesteam2.jpg" alt="">
+                    <img src="./assets/images/ROI.png" alt="">
                 </div>
                 <div class="contentBox">
                     <h2>20% of monthly ROI</h2>
@@ -407,7 +403,7 @@
             <!-- ==============the third card================ -->
             <div class="card">
                 <div class="imgbx">
-                    <img src="./assets/images/Caawwqpture.PNG" alt="">
+                    <img src="./assets/images/Personal Dashboard.png" alt="">
                 </div>
                 <div class="contentBox">
                     <h2>Personal dashboard </h2>
@@ -419,7 +415,7 @@
             <!-- ==============the fourth card =============== -->
             <div class="card">
                 <div class="imgbx">
-                    <img src="./assets/images/thum1.jpg" alt="">
+                    <img src="./assets/images/Payment Options.png" alt="">
                 </div>
                 <div class="contentBox">
                     <h2>Payment options</h2>
@@ -554,7 +550,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 <!-- +++++++++++++++++++++++++++++++++JQuery+++++++++++++++++++++++++++++++++++++++ -->
-    <script>
+<script>
+
+    // -----------------navbar jqery======================
+    $(document).on('click','.nav .links a',function(){
+  $(this).addClass('active').siblings().removeClass('active')
+})
+    // -----------------navbar jquery----------------------
     $(".step").click( function() {
 	$(this).addClass("active1").prevAll().addClass("active1");
 	$(this).nextAll().removeClass("active1");
