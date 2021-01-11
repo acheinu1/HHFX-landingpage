@@ -246,10 +246,12 @@ nav .icon-burger .line {
   width: 60%;
   position: relative;
   height: 40%;
+  /* background-color: #1b8501; */
 }
 .text {
   padding-left: 300px;
   padding-right: 100px;
+  /* background-color: #131720; */
 }
 
 .text h4 {
