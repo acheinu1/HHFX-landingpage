@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Team</title>
+</head>
+<body>
+    <!-- =================the navbar=================== -->
+     <!-- #---------the nav bar =======================================================-->
+     <nav>
+      <input id="nav-toggle" type="checkbox">
+      <div class="logo">HH<strong>FX</strong></div>
+      <ul class="links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#training">Our training</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+
+    </ul>
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+  </nav>
+  <!-- #---------the nav bar ========================================================-->
+  <!-- ==================navbar============== -->
+
+    <!-- ===================wrappper=============================== -->
+    <div class="heading">
+      <h1>MEET OUR TEAM</h1>
+   </div> 
+    <div class="wrapper">
+        <div class="our_team">
+           <div class="team team_1">
+               <div class="team_img">
+                 <img src="assets/images/femi.jpg" alt="team_member">  
+             </div>
+             <div class="team_role">Manager</div>
+             
+                <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4>Femi</h4>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, optio?</p>
+               </div>
+           </div>
+           <div class="team team_2">
+              <div class="team_img">
+                 <img src="assets/images/adrian.jpg" alt="team_member">  
+             </div>
+             <div class="team_role">Manager</div>
+             <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4>John Doe</h4>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, optio?</p>
+               </div>
+          </div>
+           <div class="team team_3">
+             <div class="team_img">
+                 <img src="assets/images/femi.jpg" alt="team_member">  
+             </div>
+             <div class="team_role">Manager</div>
+             <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4>Perry Doe</h4>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, optio?</p>
+               </div>
+          </div>
+           <div class="team team_4">
+             <div class="team_img">
+                 <img src="assets/images/adrian.jpg" alt="team_member">  
+             </div>
+             <div class="team_role">Support Manager</div>
+             <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4>Jason Peter</h4>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, optio?</p>
+               </div>
+          </div>
+      </div>
+    </div>
+    <!--=======================wrapper======================== -->
+    <!-- ====================footer================= -->
+    <section class="footer">
+      <div class="container2">
+          <div class="row1">
+              <div class="footer-col">
+                  <h4>HHFX Capital</h4>
+                  <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our training</a></li>
+                    <li><a href="./team.html">our team</a></li>
+                    <li><a href="./gallery.html">gallery</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">payment options</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>quick links</h4>
+                  <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="http://hnxx-users.surge.sh/">invest now</a></li>
+                    <li><a href="http://hnxx-users.surge.sh/">view investment</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+ </section>
+ <!-- ========================footer ends ===================== -->
+
+    <script>
+        var menu_items = document.querySelectorAll(".menu");
+        Array.from(menu_items).forEach(function(menu){
+        menu.addEventListener("click", function(){
+            this.classList.toggle("active")
+         });
+        });
+    </script>
+</body>
+</html>

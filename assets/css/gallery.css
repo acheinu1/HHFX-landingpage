@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,600&display=swap');
+
 body{
-  overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(206, 248, 253);
+    text-align: center;
 }
 /*=========================================the navbar========================== */
 /*=========================================the navbar========================== */
@@ -158,207 +162,117 @@ nav .icon-burger .line {
 
 /* ==================the navbar ends====================================== */
 
-/* ==================the navbar ends====================================== */
-.faq-section {
-    /* background: #fdfdfd; */
-    background: rgb(167, 251, 233);
+ h1{
+    font-weight: 500;
+    color: #131720;
+    border-bottom: 2px #036ecc solid;
+    line-height: 100px;
+    display: inline-block;
+    /* width: 20px; */
+	margin-top: 7%;
+	text-align: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 10vh 0 0;
-    background-image: url('/assets/images/gradient2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin-bottom: 15%;
+    /* max-width: ; */
+    /* background-image: linear-gradient(to right, #014785 0%, #036ecc 100%); */
 }
-.faq-title h2 {
-  position: relative;
-  margin-bottom: 45px;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1;
+.box{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    text-align: center;
+    perspective: 50em;
+    transition: all 0.2s ease-out;
+    color: #000;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 7px 0px #036ecc7a;
+-moz-box-shadow:    1px 1px 7px 0px #036ecc6e;
+box-shadow:         1px 1px 7px 0px #036ecc70;
 }
-/* .row{
-  display: flex;
-  flex-direction: column;
-} */
-.faq-title h2::before {
-    content: "";
+.box img{
+    max-width: 100%;
+    vertical-align: top;
+}
+figcaption img{
+    width: 80px;
+}
+.box figcaption{
+    top: 50%;
+    left: 20px;
+    right: 20px;
     position: absolute;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background: #036ecc;
-    bottom: -25px;
-    margin-left: -30px;
+    opacity: 0;
+    z-index: 1;
 }
-.faq-title h2 {
-  /* padding: 0 190px;
-  margin-bottom: 10px; */
-  padding: 0 20px ;
-  text-align: center;
+.box h2,
+.box h4{
+    margin: 0;
 }
-
-.faq {
-  background: #FFFFFF;
-  /* box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06); */
-  border-radius: 4px;
-  margin-bottom: 10%;
-  -webkit-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
+.box h2{
+    font-weight: 600;
+    color: white;
 }
-
-.faq .card {
-  border: none;
-  background: none;
-  border-bottom: 1px dashed #CEE1F8;
+.box h4{
+    font-weight: 500;
+    text-transform: uppercase;
 }
-
-.faq .card .card-header {
-  padding: 0px;
-  border: none;
-  background: none;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+.box:after{
+    background-image: linear-gradient(to right, #01478586 0%, #036eccc2 100%);
+    position: absolute;  
+    content: '';
+    display: block;
+    top:20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    transition: all 0.4s ease-in-out;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50%;
+    opacity: 0;
 }
-
-.faq .card .card-header:hover {
-    background:#036ecc3a;
-    padding-left: 10px;
+.box:hover figcaption,
+.box .hover figcaption{
+    transform: translateY(-50%);
+    opacity: 1;
+    transition-delay: 0.2s;
 }
-.faq .card .card-header .faq-title {
-  width: 100%;
-  text-align: left;
-  padding: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #3B566E;
-  text-decoration: none !important;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.box:hover::after, 
+.box.hover::after{
+    transform: rotateX(0);
+    opacity: 0.9;
 }
 
-.faq .card .card-header .faq-title .badge {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 14px;
-  /* float: left; */
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  text-align: center;
-  background: #036ecc;
-  color: #fff;
-  font-size: 12px;
-  margin-right: 20px;
-}
-
-.faq .card .card-body {
-  padding: 30px;
-  padding-left: 35px;
-  padding-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #6F8BA4;
-  line-height: 28px;
-  letter-spacing: 1px;
-  border-top: 1px solid #F3F8FF;
-}
-
-.faq .card .card-body p {
-  margin-bottom: 14px;
-}
-
+/* ===========responsive============== */
 @media (max-width: 991px) {
-  .faq {
-    margin-bottom: 30px;
-  }
-  .faq .card .card-header .faq-title {
-    line-height: 26px;
-    margin-top: 10px;
-  }
-}
-
-/* =======================the contact form================ */
-
-button{
-  padding: 10px 20px;
-  font-size: 20px;
-  margin: 3% 10%;
-  background-color: #036ecc;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  -webkit-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
-}
-button a{
-  color: #fff;
-}
-button a:hover{
-  color: #fff;
-}
-button:hover{
-  /* padding:0 10px; */
-  margin-left: 20%;
-  -webkit-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
-box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
-}
-
-
-.text-typing {
-  padding:20px 30px;
-  /* background:rgba(255, 255, 255, 0.705); */
-  border-radius:20px;
-  font-size: 60px;
-  margin-top: 10%;
-  text-indent: 10%;
-}
-
-@media (max-width: 991px) {
-  .text-typing{
-    background:rgba(255, 255, 255, 0.849); 
-    background-size: 10px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 5px 5px;
-    margin-top: 1%;
-    border-radius: 5px;
+    .wrapper{
+      grid-template-columns: auto;
+      grid-gap: 10px;
+      margin-bottom: 10%;
+    }
+    .box{
+        min-width: 300px;
+        max-width: 230px;
+    }
     
   }
-  .text-typing h1{
-    font-size: 25px;
-    text-indent: 0;
-    text-align: center;
-    line-height: 8px;
-  }
-  button{
-    padding: 7px 14px;
-    font-size: 12px;
-    margin: 0 33%;
-  }
-}
-
-/* =====================================footer starts=========================== */
 
 
-/* =====================================footer starts=========================== */
+  /* =====================================footer starts=========================== */
 
 .container2{
 	max-width: 1170px;
-  margin:auto;
-  /* text-align: start; */
+    margin:auto;
+    text-align: start;
 }
 .row1{
 	display: flex;
@@ -373,7 +287,7 @@ ul{
 }
 .footer-col{
    width: 25%;
-   /* padding: 0 15px; */
+   padding: 0 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -441,3 +355,5 @@ ul{
 }
 }
 /*************...........................footer End*****************/
+
+  
