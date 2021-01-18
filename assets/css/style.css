@@ -1060,7 +1060,7 @@ svg path:nth-child(4) {
 #slider-container {
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 100vh;
   /* background:  #036ecc;
   background: linear-gradient(45deg, #014785 0%,#036ecc 100%); */
   background-image: url('../images/What\ our\ clients.....png');
@@ -1152,6 +1152,29 @@ footer cite{
 blockquote p{ 
   font-size: 14px;
   line-height: 25px;
+}
+
+/* blockquote footer img{
+  margin-left: 60%;
+ 
+} */
+footer cite{
+  font-size: 13px;
+}
+}
+@media screen and (max-width: 378px) {
+  #testimonials{
+   
+    width: 100%;
+  }
+  
+#slider-container h1{
+  font-size: 25px;
+  padding: 0 5%;
+}
+blockquote p{ 
+  font-size: 12px;
+  line-height: 20px;
 }
 
 /* blockquote footer img{
