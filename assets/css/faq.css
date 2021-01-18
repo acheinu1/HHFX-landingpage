@@ -3,7 +3,16 @@ body{
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
-/*=========================================the navbar========================== */
+@font-face {
+  font-family: 'CAAirconaW00-Plain';
+  src: url('../font/CAAirconaW00-Plain.woff2') format('woff2'),
+      url('../font/CAAirconaW00-Plain.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*=========================================the navbar========================== */
 .container {
 	position: relative;
@@ -20,7 +29,7 @@ nav {
 	right: 0;
 	padding: 0 2%;
 	height: 50px;
-	background-color: #131720;
+	background-color: #131720cc;
 }
 nav .logo {
 	float: left;
@@ -28,8 +37,9 @@ nav .logo {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	font-size: 24px;
-	color: #fff;
+	font-size: 30px;
+  color: #fff;
+  font-family: 'CAAirconaW00-Plain';
 }
 nav .links {
 	float: right;
@@ -156,7 +166,6 @@ nav .icon-burger .line {
 }
 
 
-/* ==================the navbar ends====================================== */
 
 /* ==================the navbar ends====================================== */
 .faq-section {
@@ -359,6 +368,7 @@ box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
 	max-width: 1170px;
   margin:auto;
   /* text-align: start; */
+  padding-left: 20px;
 }
 .row1{
 	display: flex;

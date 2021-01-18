@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CAAirconaW00-Plain';
+  src: url('../font/CAAirconaW00-Plain.woff2') format('woff2'),
+      url('../font/CAAirconaW00-Plain.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #mainsection{
 height: 100vh;
 
@@ -29,6 +38,7 @@ height: 100vh;
 .mobile img{
   display: none;
 }
+/*=========================================the navbar========================== */
 /*=========================================the navbar========================== */
 .container {
 	position: relative;
@@ -53,8 +63,10 @@ nav .logo {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	font-size: 24px;
-	color: #fff;
+	font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'CAAirconaW00-Plain';
 }
 nav .links {
 	float: right;
@@ -1048,7 +1060,7 @@ svg path:nth-child(4) {
 #slider-container {
   display: flex;
   flex-wrap: wrap;
-  height: 70vh;
+  height: 80vh;
   /* background:  #036ecc;
   background: linear-gradient(45deg, #014785 0%,#036ecc 100%); */
   background-image: url('../images/What\ our\ clients.....png');
@@ -1063,7 +1075,7 @@ svg path:nth-child(4) {
   margin: 0 auto;
   overflow: hidden;
   width: 900px;
-  height: 200px;
+  height: 300px;
   background-color: #1a1a1bd2;
 }
 
@@ -1208,12 +1220,14 @@ header h1{
   font-weight: 500;
   margin: 0;
 }
+
 .blogContent h3 span{
   display: block;
   font-size: 60%;
   margin-top: 5px;
   font-weight: 600;
-  color: rgba(52, 73, 94,1.0)
+  color: rgb(250, 250, 250);
+  padding-bottom: 10px;
 }
 
 .blogContent a{
