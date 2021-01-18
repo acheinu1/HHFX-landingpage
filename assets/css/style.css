@@ -1051,7 +1051,7 @@ svg path:nth-child(4) {
 }
 
 #slider-container h1{
-  font-size: 50px;
+  font-size: 55px;
   color: #ffffff;
   text-align: center;
   margin: auto;
@@ -1074,7 +1074,7 @@ svg path:nth-child(4) {
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
-  width: 900px;
+  width: 1000px;
   height: 300px;
   background-color: #1a1a1bd2;
 }
@@ -1100,7 +1100,7 @@ blockquote {
 }
 blockquote p{
   color: rgb(255, 255, 255); 
-  font-size: 16px;
+  font-size: 17px;
   padding: 20px;
   line-height: 25px;
 }
@@ -1139,6 +1139,23 @@ footer cite{
   background-color:none;
 }
 /* ================================testimonial media query================================ */
+@media screen and (max-width: 1800px){
+  #testimonials{
+    width: 80%;
+  }
+  
+#slider-container h1{
+  font-size: 55px;
+  padding: 0 5%;
+}
+/* blockquote p{ 
+  font-size: 12px;
+  line-height: 20px;
+} */
+
+}
+
+
 @media screen and (max-width: 768px) {
   #testimonials{
     height: 470px;
@@ -1162,9 +1179,8 @@ footer cite{
   font-size: 13px;
 }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 372px) {
   #testimonials{
-   
     width: 100%;
   }
   
@@ -1185,6 +1201,9 @@ footer cite{
   font-size: 13px;
 }
 }
+
+
+
 /* ================================================================================= */
 /* =====================================the blog ============================== */
 .blogContent a{
