@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(206, 248, 253);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 /*=========================================the navbar========================== */
@@ -175,14 +175,15 @@ body{
   /* ==================the navbar ends====================================== */
 /* ==================the navbar ends====================================== */
  h1{
-    font-weight: 500;
-    color: #131720;
-    border-bottom: 2px #036ecc solid;
+    font-weight: 600;
+    color:  #036ecc;
+    border-bottom: 2px #131720 solid;
     line-height: 100px;
     display: inline-block;
     /* width: 20px; */
 	margin-top: 7%;
-	text-align: center;
+  text-align: center;
+  font-size: 45px;
 }
 .wrapper{
     display: flex;

@@ -4,7 +4,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(206, 248, 253);
+  background-color: rgb(255, 255, 255);
 }
 
 /*=========================================the navbar========================== */
@@ -192,14 +192,16 @@ nav .icon-burger .line {
   width: auto;
 }
 .heading h1{
-  font-weight: 600;
-  color: #131720;
-  border-bottom: 2px #036ecc solid;
+  font-weight: 800;
+  color: #036ecc;
+  border-bottom: 2px #000000 solid;
   line-height: 100px;
   display: inline-block;
   margin: 5% auto;
   text-align: center;
   margin-left: 6%;
+  font-size: 45px;
+  
 }
 
 .wrapper .our_team .team{

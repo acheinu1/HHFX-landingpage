@@ -170,12 +170,10 @@ nav .icon-burger .line {
 /* ==================the navbar ends====================================== */
 .faq-section {
     /* background: #fdfdfd; */
-    background: rgb(167, 251, 233);
+    /* background: rgb(255, 255, 255); */
+    background-color: #036ecc;
     min-height: 100vh;
-    padding: 10vh 0 0;
-    background-image: url('/assets/images/gradient2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 2vh 0 0;
 }
 .faq-title h2 {
   position: relative;
@@ -183,6 +181,7 @@ nav .icon-burger .line {
   display: inline-block;
   font-weight: 600;
   line-height: 1;
+  color: white;
 }
 /* .row{
   display: flex;
@@ -194,7 +193,7 @@ nav .icon-burger .line {
     left: 50%;
     width: 60px;
     height: 2px;
-    background: #036ecc;
+    background: #000000;
     bottom: -25px;
     margin-left: -30px;
 }
@@ -303,7 +302,7 @@ button{
   padding: 10px 20px;
   font-size: 20px;
   margin: 3% 10%;
-  background-color: #036ecc;
+  background-color: #fff;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -312,10 +311,11 @@ button{
 box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
 }
 button a{
-  color: #fff;
+  color: #036ecc;
+  font-weight: 500;
 }
 button a:hover{
-  color: #fff;
+  font-weight: 800;
 }
 button:hover{
   /* padding:0 10px; */
@@ -333,11 +333,12 @@ box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
   font-size: 60px;
   margin-top: 10%;
   text-indent: 10%;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
   .text-typing{
-    background:rgba(255, 255, 255, 0.849); 
+    background:rgba(255, 255, 255, 0.198); 
     background-size: 10px;
     width: 90%;
     margin: 40px auto;
@@ -353,8 +354,8 @@ box-shadow: -1px 7px 15px -9px rgba(0,0,0,0.75);
     line-height: 8px;
   }
   button{
-    padding: 7px 14px;
-    font-size: 12px;
+    padding: 7px 15px;
+    font-size: 10px;
     margin: 0 33%;
   }
 }
